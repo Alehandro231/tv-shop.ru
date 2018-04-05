@@ -1,0 +1,149 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background: #f8f8f8;
+}
+
+/* Стилизация шапки и меню */
+
+.header {
+    height: 150px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header .logo h1 {
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    padding-left: 3px;
+    background-position: left;
+    font-size: 1.9em;
+}
+.header .logo h1 span {
+    color: #fff;
+}
+
+.header .menu li {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: "Times New Roman", sans-serif;
+    list-style: none;
+}
+
+.header .menu li a {
+    color: #110D1B;
+    text-decoration: none;
+}
+
+.header .menu li a:hover {
+    color: #600CAC;
+}
+
+.header .menu li a:active {
+    color: #8E41D5;
+}
+
+/* #/ Стилизация шапки и меню */
+
+/* Стилизация страниц товаров */
+
+.product h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.productImg {
+    outline: 2px dotted blue;
+}
+
+.productImg:hover {
+    outline: none;
+}
+
+.description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailedProductDescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.description:first-letter, .detailedProductDescription:first-letter {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+} 
+
+.product .TechnicalParameters {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.product .TechnicalParameters tr td {
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.product .TechnicalParameters tr:first-child td {
+    height: 25px;
+    font-weight: 700;
+}
+
+.characteresProductum > li {
+    list-style-image: url(./img/ul.jpg);
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+.characteresProductum > ul > li {
+    list-style-image: url(./img/li.jpg);
+    font-family: "Times New Roman";
+    font-size: 1.2em;
+}
+
+.characteresProductum > ul > li i {
+    color: blue;
+}
+
+/* #/ Стилизация страниц товаров */
+
+/* Стилизация страницы контактов */
+
+.input_text, .input_email, .input_message {
+    width: 300px;
+    height: 25px;
+    font-size: 1em;
+    color: #110D1B;
+}
+
+.input_text {
+    text-transform: capitalize;
+}
+
+.input_message {
+    height: 80px;
+    font-size: 1.3em;
+}
+
+form .button {
+    width: 151px;
+    font-size: 15px;
+}
+
+.input_email:focus {
+    color: blue;
+    background: #ccc;
+}
+
+/* #/ Стилизация страницы контактов */
