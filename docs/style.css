@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
 }
 
+.home .conteiner > p.welcome {
+    margin: 20px;
+}
+
 /* Стилизация шапки и меню */
 
 .header {
@@ -22,6 +26,11 @@ body {
 .header .logo {
     padding: 20px 0 0 20px;
     float: left;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: black;
 }
 
 .header .logo h1 {
@@ -64,9 +73,31 @@ body {
 
 /* #/ Стилизация шапки и меню */
 
+/* Стилизация страницы Каталога */
+
+.catalog-product {
+    display: block;
+    float: left;
+    max-width: 200px;
+    text-align: center;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.catalog-product:hover {
+    color: blueviolet;
+}
+
+.catalog-product img {
+    max-width: 200px;
+}
+
+/* #/ Стилизация страницы Каталога */
+
 /* Стилизация страниц товаров */
 
-.product .header-name {
+.header-name {
     margin: 20px 0 20px 20px;
 }
 
@@ -118,6 +149,8 @@ div.photo {
     padding: 10px 88px;
     border-radius: 20px;
     background: #38DF64;
+    border: none;
+    font-weight: 700;
     
 }
 
@@ -127,7 +160,6 @@ div.photo {
 
 .button-buy input:active {
     background: #64DF85;
-    border: 2px solid transparent;
 }
 
 .button-buy input:focus {
@@ -213,11 +245,41 @@ div.photo {
 
 /* Стилизация страницы контактов */
 
+.header-contact {
+    margin: 20px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em
+}
+
+.contacts form.writeToUs {
+    max-width: 330px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contacts form.writeToUs fieldset {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contacts form.writeToUs fieldset p {
+    text-align: left;
+    margin: 5px 0 2px 2px;
+}
+
 .input_text, .input_email, .input_message {
     width: 300px;
     height: 25px;
     font-size: 1em;
     color: #110D1B;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+.input_text:focus, .input_email:focus, .input_message:focus {
+    color: blue;
+    background: #ccc;
 }
 
 .input_text {
@@ -227,18 +289,80 @@ div.photo {
 .input_message {
     height: 80px;
     font-size: 1.3em;
+    resize: none;
 }
 
-form .button {
+form.writeToUs .button {
     width: 151px;
     font-size: 15px;
+    margin-top: 10px;
+    padding: 5px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
 }
 
-.input_email:focus {
-    color: blue;
-    background: #ccc;
+form.writeToUs .push {
+    background: #74E868;
 }
 
+form.writeToUs .push:hover {
+    background: #4AE83A;
+}
+
+form.writeToUs .push:active {
+    background: #0D8800;
+}
+
+form.writeToUs .reset {
+    background: #FF7373;
+}
+
+form.writeToUs .reset:hover {
+    background: #FF4040;
+}
+
+form.writeToUs .reset:active {
+    background: #A60000;
+}
+
+.our-contacts {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.our-contacts-tel, .our-contacts-home, .our-contacts-email, .our-contacts-time {
+    margin: 10px 20px;
+    font-size: 1.2em;
+}
+
+.our-contacts-tel a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.our-contacts-tel a:hover {
+    color: blueviolet;
+}
+
+.our-contacts-email a {
+    text-decoration: none;
+    color: black;
+}
+
+.our-contacts-time span {
+    font-weight: 700;
+}
+
+.our-contacts-email a:hover {
+    color: blueviolet;
+}
+
+.maps {
+    width: 100%;
+    height: 374px;
+}
 /* #/ Стилизация страницы контактов */
 
 /* Стилизация footer */
@@ -247,6 +371,11 @@ form .button {
     height: 50px;
     background: #ccc;
     margin-top: 20px;
+    clear: both;
+}
+
+.contacts > .footer {
+    margin-top: 0;
 }
 
 .footer p {
